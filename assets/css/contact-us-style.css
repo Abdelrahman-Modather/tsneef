@@ -1,0 +1,322 @@
+/* Contact */
+.contact {
+  padding: 5rem 0;
+  background-color: var(--secondary-bg-color);
+  position: relative;
+  overflow: hidden;
+}
+.contact .container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.contact .container .contact-form {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.contact .container .contact-form > p {
+  color: var(--main-color);
+  font-size: 1.6rem;
+}
+.contact .container .contact-form h5 {
+  font-size: 3rem;
+  padding-bottom: 1.6rem;
+  width: 80%;
+  text-align: center;
+}
+.contact .container .contact-form .form {
+  padding: 2.5rem;
+  border-radius: 1.2rem;
+  background-color: white;
+  width: 100%;
+}
+.contact .container .contact-form .form p {
+  font-size: 1.2rem;
+  font-weight: 600;
+  padding-bottom: 0.6rem;
+}
+.contact .container .contact-form .form form {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1rem;
+}
+.contact .container .contact-form .form form div {
+  display: flex;
+  flex-direction: column;
+  gap: 0.6rem;
+  font-size: 1.2rem;
+}
+.contact .container .contact-form .form form input,
+.contact .container .contact-form .form form textarea {
+  height: 3.2rem;
+  width: 100%;
+  padding: 1rem;
+  border-radius: 0.6rem;
+  outline: none;
+  border: 1px solid #dbdbdb;
+  font-size: 1.2rem;
+}
+.contact .container .contact-form .form form .first-name,
+.contact .container .contact-form .form form .last-name {
+  grid-column: span 1;
+}
+.contact .container .contact-form .form form input[type="submit"] {
+  background-color: var(--main-color);
+  color: white;
+  padding: 0.9rem 2.5rem;
+  border-radius: 2.5rem;
+  font-size: 1.2rem;
+  font-weight: 900;
+  cursor: pointer;
+}
+.contact .container .contact-form .form form .mobile-number,
+.contact .container .contact-form .form form .order-type,
+.contact .container .contact-form .form form .order-details,
+.contact .container .contact-form .form form input[type="submit"] {
+  grid-column: span 2;
+}
+.contact .container .contact-form .form form textarea {
+  height: 9.2rem;
+  resize: none;
+  outline: none;
+}
+.contact .container .whatsapp-contact {
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+  position: absolute;
+  left: 0;
+  top: 54%;
+  max-width: 21.9rem;
+  padding: 1rem;
+  background-color: white;
+  border-radius: 0.6rem;
+  box-shadow: 6px 4px 64px 10px #0000000d;
+  animation: whatsapp-popup 2s;
+}
+@keyframes whatsapp-popup {
+  0% {
+    left: -25rem;
+    opacity: 0;
+  }
+  50% {
+    opacity: 0.5;
+  }
+  100% {
+    left: 0;
+    opacity: 1;
+  }
+}
+.contact .container .whatsapp-contact span {
+  font-size: 1.1rem;
+  font-weight: 600;
+}
+.contact .container .whatsapp-contact .number {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+}
+.contact .container .whatsapp-contact .number img {
+  width: 1.3rem;
+  height: 1.3rem;
+}
+/* Stay closer */
+.stay-closer {
+  background-color: var(--main-color);
+  padding: 3.8rem 0;
+  background-image: url(../images/bg-star-3.png), url(../images/bg-star-4.png);
+  background-repeat: no-repeat;
+  background-position: top left, top right;
+  background-size: 85% 100%, 75% 135%;
+}
+.stay-closer .container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 1.9rem;
+}
+.stay-closer .container > p {
+  color: white;
+  font-size: 3rem;
+}
+.stay-closer .container .social-media {
+  display: flex;
+  justify-content: center;
+  background-color: white;
+  padding: 1.2rem;
+  border-radius: 1.2rem;
+  gap: 4.4rem;
+  width: 100%;
+}
+.stay-closer .container .social-media div a i {
+  font-size: 2rem;
+  color: var(--main-color);
+}
+.stay-closer .container .contact-methods {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  gap: 1.2rem;
+}
+.stay-closer .container .contact-methods .by-mobile,
+.stay-closer .container .contact-methods .by-email,
+.stay-closer .container .contact-methods .by-sms {
+  display: flex;
+  align-items: center;
+  gap: 0.9rem;
+  background-color: white;
+  padding: 1.2rem;
+  border-radius: 1.2rem;
+  flex: 1;
+}
+.stay-closer .container .contact-methods .by-mobile p,
+.stay-closer .container .contact-methods .by-email p,
+.stay-closer .container .contact-methods .by-sms p {
+  font-size: 1.6rem;
+}
+.stay-closer .container .contact-methods .by-mobile img,
+.stay-closer .container .contact-methods .by-email img,
+.stay-closer .container .contact-methods .by-sms img {
+  width: 40px;
+  height: 40px;
+}
+.stay-closer .container .location {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  background-color: white;
+  padding: 20px;
+  border-radius: 20px;
+  width: 100%;
+}
+.stay-closer .container .location img {
+  width: 2.5rem;
+  height: 2.5rem;
+}
+.stay-closer .container .location .loc-info span {
+  font-size: 1.5rem;
+}
+.stay-closer .container .location .loc-info p {
+  color: var(--main-text-color);
+}
+/* Frequently Asked Questions */
+.frequently-questions {
+  padding: 3.8rem 0;
+  background-color: var(--secondary-bg-color);
+}
+.frequently-questions .container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.frequently-questions .container h3 {
+  font-size: 2.2rem;
+  padding-bottom: 3.8rem;
+  align-self: center;
+}
+.frequently-questions .container .questions {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.frequently-questions .container .questions .questions-right {
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+  width: 45%;
+}
+.frequently-questions .container .questions .questions-right .question {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.1rem;
+  background-color: white;
+  border-radius: 0.9rem;
+}
+
+.frequently-questions .container .questions .questions-left {
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+  width: 45%;
+}
+.frequently-questions .container .questions .questions-left .question {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.1rem;
+  background-color: white;
+  border-radius: 0.9rem;
+}
+/* Media Query */
+/* Extra Small (Phones) */
+@media (max-width: 575px) {
+  /* Contact */
+  .contact .container .contact-form h5 {
+    font-size: 2rem;
+  }
+  .contact .container .whatsapp-contact {
+    position: static;
+    animation: none;
+    margin-top: 1rem;
+  }
+  /* Stay closer */
+  .stay-closer .container .social-media {
+    gap: 1.4rem;
+  }
+  .stay-closer .container .contact-methods {
+    flex-direction: column;
+  }
+  /* Frequently Asked Questions */
+  .frequently-questions .container .btns {
+    flex-direction: column;
+  }
+  .frequently-questions .container .questions {
+    flex-direction: column;
+  }
+  .frequently-questions .container .questions .questions-right,
+  .frequently-questions .container .questions .questions-left {
+    width: 100%;
+  }
+}
+/* Small (Tablets & Larger Phones) */
+@media (min-width: 576px) and (max-width: 767px) {
+  /* Contact */
+  .contact .container .whatsapp-contact {
+    position: static;
+    animation: none;
+    margin-top: 1rem;
+  }
+  /* Stay Closer */
+  .stay-closer .container .contact-methods {
+    flex-direction: column;
+  }
+  /* Frequently Asked Questions */
+  .frequently-questions .container .btns {
+    flex-direction: column;
+  }
+  .frequently-questions .container .questions {
+    flex-direction: column;
+  }
+  .frequently-questions .container .questions .questions-right,
+  .frequently-questions .container .questions .questions-left {
+    width: 100%;
+  }
+}
+/* Medium (Tablets) */
+@media (min-width: 768px) and (max-width: 991px) {
+  /* Contact */
+  .contact .container .whatsapp-contact {
+    position: static;
+    animation: none;
+    margin-top: 1rem;
+  }
+  /* Stay Closer */
+  .stay-closer .container .contact-methods {
+    flex-direction: column;
+  }
+}

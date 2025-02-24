@@ -1,0 +1,103 @@
+/* Received your Request */
+.received-your-request {
+  background-color: var(--main-color);
+  padding: 7.5rem 0;
+  background-image: url(../images/bg-star-3.png), url(../images/bg-star-4.png);
+  background-repeat: no-repeat;
+  background-position: top left, top right;
+  background-size: 85% 100%, 75% 90%;
+}
+.received-your-request .container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 2.5rem;
+  background-color: white;
+  border-radius: 1rem;
+  padding: 3.8rem;
+}
+.received-your-request .container .request-status {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.received-your-request .container .request-status .image {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 13.8rem;
+  height: 13.8rem;
+  background-color: #eeebf2;
+  border-radius: 50%;
+}
+.received-your-request .container .request-status img {
+  width: 6.2rem;
+  height: 6.2rem;
+}
+.received-your-request .container .request-status h4 {
+  font-size: 2.8rem;
+  color: var(--main-color);
+}
+.received-your-request .container .request-status p {
+  font-size: 1.2rem;
+  color: var(--main-text-color);
+}
+.received-your-request .container .request-status p span {
+  color: var(--main-color);
+}
+.received-your-request .container .copy {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 0.4rem;
+}
+.received-your-request .container button {
+  color: var(--main-color);
+  background-color: var(--secondary-bg-color);
+  padding: 1rem 2.5rem;
+  border: 1px solid var(--main-color);
+  border-radius: 2.2rem;
+  transition: var(--transition);
+}
+.received-your-request .container button:hover {
+  color: white;
+  background-color: var(--main-color);
+}
+.received-your-request .container #copied {
+  visibility: hidden;
+  font-size: 1.2rem;
+  color: var(--main-text-color);
+  transition: var(--transition);
+}
+/* Media Query */
+/* Extra Small (Phones) */
+@media (max-width: 575px) {
+  /* Received your Request */
+  .received-your-request .container .request-status .image {
+    width: 10rem;
+    height: 10rem;
+  }
+  .received-your-request .container .request-status h4 {
+    font-size: 2rem;
+  }
+  .received-your-request .container .request-status p {
+    text-align: center;
+  }
+}
+/* Small (Tablets & Larger Phones) */
+@media (min-width: 576px) and (max-width: 767px) {
+  /* Received your Request */
+  .received-your-request .container .request-status .image {
+    width: 11rem;
+    height: 11rem;
+  }
+  .received-your-request .container .request-status h4 {
+    font-size: 2.3rem;
+  }
+  .received-your-request .container .request-status p {
+    text-align: center;
+  }
+}

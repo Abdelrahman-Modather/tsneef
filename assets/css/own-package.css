@@ -1,0 +1,355 @@
+:root {
+  --note-color : rgba(95, 57, 142, 0.1);
+}
+[data-theme="dark"] {
+  --bg-primary-section: rgba(23, 25, 31, 1);
+  --bg-second-section: rgba(0, 0, 0, 1);
+  --heading-color: rgba(255, 255, 255, 1);
+  --state-color:rgba(217, 199, 244, 1);
+  --state-logo-second-color:rgba(217, 199, 244, 1);
+  --logo-color : rgba(255, 255, 255, 1);
+  --social-icons : rgba(255, 255, 255, 1);
+  --info-container-bg : rgb(26 26 26 / 84%);
+}
+[data-theme="light"] {
+  --bg-primary-section: white;
+  --bg-second-section: rgba(249, 249, 249, 1);
+  --heading-color: rgba(0, 0, 0, 1);
+  --state-color:#492a70;
+  --state-logo-second-color:#48296F;
+  --logo-color : #5F398E;
+  --social-icons : #292D32;
+  --info-container-bg : rgba(242, 242, 242, 1);
+}
+
+main {
+  padding-block: 2rem;
+  background-color: var(--bg-second-section);
+}
+
+main .content {
+  display: grid;
+  grid-template-columns: 45% 50%;
+  column-gap: 5%;
+}
+
+main p {
+  font-size: 1rem;
+  margin-bottom: 10px;
+  color: var(--heading-color);
+}
+
+main .container .header-text {
+  font-size: 1rem;
+  margin-bottom: 5rem;
+  text-align: center;
+  color: var(--heading-color);
+}
+
+.sector-head {
+  font-size: 1.2rem;
+  margin-block: 0.9rem;
+  color: var(--heading-color);
+}
+main .container h1 {
+  text-align: center;
+  color: var(--heading-color);
+}
+.form-group + p {
+  font-size: 1.7rem;
+  font-weight: 600;
+}
+.form-container {
+  background: var(--bg-primary-section);
+  padding: 1.5rem;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  text-align: right;
+  color: var(--heading-color);
+}
+
+.form-group:not(.form-group:nth-child(5)) {
+  display: flex;
+  gap: 0.7rem;
+}
+
+.form-group:nth-child(5) div:first-child {
+  margin-bottom: 1rem;
+}
+
+.form-group div {
+  flex: 1;
+}
+
+.form-container label {
+  display: block;
+  margin-bottom: 0.25rem;
+  font-size: 1rem;
+  font-weight: bold;
+}
+
+.form-container input,
+select {
+  width: 100%;
+  padding: 0.625rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: var(--bg-primary-section);
+  color: var(--heading-color);
+}
+
+.form-container .note {
+  background: var(--note-color);
+  padding: 10px;
+  border-radius: 5px;
+  color: #5a189a;
+  font-size: 1.1rem;
+  margin-top: 1rem;
+}
+
+.form-container .terms {
+  font-size: 0.9rem;
+  margin-top: 0.7rem;
+}
+
+.form-container .terms a {
+  color: #5a189a;
+  text-decoration: underline;
+  font-weight: bold;
+}
+
+
+.form-container button {
+  width: 100%;
+  background: #5a189a;
+  color: white;
+  padding-block: 0.75rem;
+  text-align: center;
+  border: none;
+  border-radius: 5rem;
+  font-size: 1rem;
+  cursor: pointer;
+  margin-top: 1rem;
+}
+
+.form-container button:hover {
+  background: #4a148c;
+}
+
+.form-container form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.form-container > p {
+  font-size: 1.7rem;
+  font-weight: 600;
+  color: var(--heading-color);
+}
+
+.options {
+  display: flex;
+  gap: 1rem;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  scroll-behavior: smooth;
+  scrollbar-width: none;
+}
+
+.option {
+  background: var(--bg-second-section);
+  padding: 1rem;
+  border-radius: 8px;
+  border: 1px solid var(--bg-second-section);
+  text-align: center;
+  position: relative;
+  min-width: 13rem;
+  color: var(--heading-color);
+}
+
+.option input[type="checkbox"] {
+  appearance: none;
+  width: 20px;
+  height: 20px;
+  border: 2px solid var(--bg-primary-section);
+  border-radius: 6px;
+  background: var(--bg-primary-section);
+  cursor: pointer;
+}
+
+.option input[type="checkbox"]:checked {
+  background-color: purple;
+  border-color: purple;
+  position: relative;
+}
+
+.option input[type="checkbox"]:checked::after {
+  content: "✔";
+  color: white;
+  font-size: 14px;
+  font-weight: bold;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.option-input {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  gap: 0.7rem;
+}
+
+.option-input input {
+  font-size: 1rem;
+}
+
+.option label {
+  display: block;
+  font-weight: bold;
+}
+
+.price {
+  background: var(--bg-primary-section);
+  padding: 5px;
+  border-radius: 5px;
+  margin: 10px 0;
+  display: inline-block;
+  width: 100%;
+  text-align: start;
+}
+.quantity {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+}
+
+.quantity-value {
+  margin-inline: 1rem;
+}
+.quantity button {
+  background-color: rgba(145, 127, 169, 0.432);
+  color: var(--heading-color);
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  padding: 0.4rem;
+  padding-top: 0.1rem;
+  height: 0.7rem;
+  width: 0.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.quantity button:hover {
+  background-color: darkviolet;
+}
+
+.info-container {
+  background: var(--info-container-bg);
+  padding: 1.5rem;
+  border-radius: 10px;
+  background-repeat: no-repeat;
+  background-position: left 80%;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  text-align: right;
+  height: fit-content;
+  position: relative;
+  color: var(--heading-color);
+}
+.info-container svg {
+  position: absolute;
+  bottom: -20%;
+  left: 0;
+}
+.info-container svg path {
+  fill: var(--bg-second-section);
+}
+.info-container .info-note {
+  position: absolute;
+  top: 1rem;
+  left: 1.5rem;
+  background-color: var(--note-color);
+  padding: 0.5rem 1rem;
+  color: #5a189a;
+  font-weight: 500;
+  border-radius: 5rem;
+}
+
+.info-container h3 {
+  font-size: 1.4rem;
+  font-weight: 600;
+}
+
+.info-container > h3 ~ p {
+  color: var(--heading-color);
+  font-size: 1.6rem;
+  font-weight: 600;
+  }
+
+.info-container span {
+  color: var(--logo-color);
+}
+.info-container .more-info a{
+  font-size: 0.8rem;
+  color: var(--logo-color) !important;
+  text-decoration: underline;
+  color: var(--note-color);
+}
+
+
+/* Responsive Screen */
+
+@media (max-width: 576px) {
+  :root {
+    font-size: 10px;
+  }
+
+  main .content {
+    display: flex;
+    flex-direction: column;
+    gap: 3.5rem;
+  }
+
+  .info-container svg {
+    width: 150px;
+    height: 170px;
+  }
+}
+
+
+
+
+@media (min-width: 576px) and (max-width: 767px) {
+  :root {
+    font-size: 11px;
+    --gap: 3rem;
+  }
+  main .content {
+    display: flex;
+    flex-direction: column;
+    gap: 3.5rem;
+  }
+
+  .info-container svg {
+    width: 170px;
+    height: 10px;
+  }
+ 
+  
+}
+
+
+@media (min-width: 768px) and (max-width: 991px) {
+  :root {
+    --gap: 3rem;
+  }
+  main .content {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+  }
+}

@@ -1,0 +1,140 @@
+/* Project Address */
+.project-address {
+  background-color: var(--secondary-bg-color);
+  padding: 5rem 0;
+}
+.project-address .container {
+  display: flex;
+  flex-direction: column;
+}
+.project-address .container h3 {
+  font-size: 3rem;
+  text-align: center;
+  padding-bottom: 3.1rem;
+}
+.project-address .container .project-hero {
+  display: flex;
+  flex-direction: column;
+  border-top: 1px solid #e6e6e6;
+  padding: 3.1rem 0;
+  gap: 3.1rem;
+}
+.project-address .container .project-hero .info {
+  display: flex;
+  gap: 3.8rem;
+  color: var(--main-text-color);
+  font-size: 1.2rem;
+}
+.project-address .container .project-info {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.project-address .project-info p {
+  color: var(--main-text-color);
+  font-size: 1.2rem;
+  width: 80%;
+}
+.project-address .project-info .images {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  padding: 3.8rem 0;
+  width: 80%;
+  column-gap: 1.2rem;
+  row-gap: 3.1rem;
+}
+.project-address .project-info .images img {
+  transition: all var(--transition-duration);
+}
+.project-address .project-info .images img:nth-child(3),
+.project-address .project-info .images img:nth-child(4) {
+  grid-column: span 2;
+}
+/* Our Comprehensive Services */
+.comprehensive-services {
+  background-color: var(--main-color);
+  color: white;
+  padding: 5rem 0;
+  background-image: url(../images/bg-shap.png), url(../images/bg-shap-2.png),
+    url(../images/bg-shap-3.png);
+  background-repeat: no-repeat, no-repeat, no-repeat;
+  background-position: left top, left top, right top;
+  background-size: 20%, 87.1% 80%, 30% 100%;
+}
+.comprehensive-services .container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+.comprehensive-services .container h6 {
+  font-size: 3rem;
+  max-width: 43.8rem;
+  text-align: center;
+}
+.comprehensive-services .container .our-services-btns {
+  display: flex;
+  gap: 1.2rem;
+  width: 100%;
+}
+.comprehensive-services .container .our-services-btns a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.8rem;
+  width: calc(100% / 3);
+  height: 5.9rem;
+  border-radius: 0.6rem;
+  font-size: 1.6rem;
+  font-weight: bold;
+  background-color: white;
+  color: #292a36;
+}
+.comprehensive-services .container .our-services-btns a img {
+  width: 1.8rem;
+  height: 1.8rem;
+}
+/* Media Query */
+/* Extra Small (Phones) */
+@media (max-width: 575px) {
+  /* Project Address */
+  .project-address .container .project-hero .info {
+    flex-direction: column;
+    gap: 1rem;
+  }
+  .project-address .project-info .images {
+    grid-template-columns: repeat(1, 1fr);
+    row-gap: 1rem;
+    column-gap: 0;
+  }
+  .project-address .container .project-info {
+    align-items: normal;
+  }
+  /* Our Comprehensive Services */
+  .comprehensive-services .container .our-services-btns {
+    flex-direction: column;
+  }
+  .comprehensive-services .container .our-services-btns a {
+    width: 100%;
+  }
+}
+/* Small (Tablets & Larger Phones) */
+@media (min-width: 576px) and (max-width: 767px) {
+  /* Our Comprehensive Services */
+  .comprehensive-services .container .our-services-btns {
+    flex-direction: column;
+  }
+  .comprehensive-services .container .our-services-btns a {
+    width: 100%;
+  }
+}
+/* Medium (Tablets) */
+@media (min-width: 768px) and (max-width: 991px) {
+  /* Our Comprehensive Services */
+  .comprehensive-services .container .our-services-btns a {
+    width: 100%;
+    font-size: 1.2rem;
+  }
+}

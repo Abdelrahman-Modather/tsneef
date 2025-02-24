@@ -1,0 +1,530 @@
+.btn {
+  background-color: var(--main-color);
+  color: white;
+  padding: 0.3rem;
+}
+.btn:hover {
+  color: var(--main-color);
+  background-color: white;
+}
+/* Our Products */
+.our-products {
+  padding: 5rem 0;
+  background-color: var(--secondary-bg-color);
+}
+.our-products .container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 3.1rem;
+  text-align: center;
+}
+.our-products .container span {
+  font-size: 3rem;
+  font-weight: 600;
+}
+.our-products .container .our-products-btns {
+  display: flex;
+  gap: 1.3rem;
+  width: 100%;
+}
+.our-products .container .our-products-btns a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.8rem;
+  width: calc(100% / 3);
+  height: 5.9rem;
+  border-radius: 0.6rem;
+  font-size: 1.6rem;
+  font-weight: bold;
+  background-color: white;
+  color: #292a36;
+}
+.our-products .container .our-products-btns a img {
+  width: 1.8rem;
+  height: 1.8rem;
+}
+.our-products .container .our-products-btns a:nth-child(2) {
+  color: white;
+  background-color: var(--main-color);
+}
+.our-products .container p {
+  font-size: 1.3rem;
+  color: var(--main-text-color);
+  max-width: 90%;
+}
+/* Features of Building Management */
+.building-management-features {
+  background-color: white;
+  padding: 3.8rem 0;
+}
+.building-management-features .container {
+  display: flex;
+  flex-direction: column;
+}
+.building-management-features .container h3 {
+  align-self: center;
+  font-size: 2.3rem;
+  padding-bottom: 4.4rem;
+}
+.building-management-features .container hr {
+  background-color: #e6e6e6;
+  height: 1px;
+  border: none;
+  position: relative;
+  top: 3rem;
+  width: 97%;
+  align-self: center;
+}
+.building-management-features .container .stars {
+  display: flex;
+  justify-content: space-between;
+  gap: 1.9rem;
+}
+.building-management-features .container .stars .star {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1.3rem;
+  text-align: center;
+}
+.building-management-features .container .stars .star:first-child img,
+.building-management-features .container .stars .star:last-child img {
+  position: relative;
+  width: 3.5rem;
+  height: 3.5rem;
+  top: -2.9rem;
+}
+.building-management-features .container .stars .star img {
+  width: 5.2rem;
+  height: 5.9rem;
+  z-index: 10;
+}
+.building-management-features .container .stars .star p {
+  color: var(--main-color);
+  font-size: 20px;
+}
+/* Cleaning Services */
+.cleaning-services {
+  background-color: var(--secondary-bg-color);
+  padding-top: 60px;
+}
+.cleaning-services .container {
+  display: flex;
+  flex-direction: column;
+  padding: 0.6rem 0;
+}
+.cleaning-services .container h3 {
+  font-size: 2.9rem;
+  padding: 2.5rem 0;
+}
+.cleaning-services .container .deep-cleaning {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+}
+.cleaning-services .container .deep-cleaning .content {
+  display: flex;
+  justify-content: space-evenly;
+  flex-direction: column;
+}
+.cleaning-services .container .deep-cleaning .content h5 {
+  font-size: 1.9rem;
+}
+.cleaning-services .container .deep-cleaning .content ul {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  color: var(--main-text-color);
+  font-size: 1.3rem;
+}
+.cleaning-services .container .deep-cleaning .content ul li {
+  list-style-type: disc;
+  margin-right: 1.9rem;
+}
+/* Surface Cleaning */
+.surface-cleaning {
+  background-color: var(--secondary-bg-color);
+}
+.surface-cleaning .container {
+  display: flex;
+  justify-content: center;
+  gap: 2.8rem;
+  padding: 3.8rem 0;
+  border-bottom: 1px solid #e6e6e6;
+}
+.surface-cleaning .container .image {
+  flex: 1;
+}
+.surface-cleaning .container .image img {
+  height: 100%;
+}
+.surface-cleaning .container .surface-cleaning-info {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  flex: 2;
+  gap: 1.3rem;
+  padding: 2.5rem 2.2rem;
+  border-radius: 1rem;
+}
+.surface-cleaning .container .surface-cleaning-info h3 {
+  font-size: 2.3rem;
+}
+.surface-cleaning .container .surface-cleaning-info ul {
+  color: var(--main-text-color);
+  font-size: 1.3rem;
+}
+.surface-cleaning .container .surface-cleaning-info ul li {
+  list-style-type: disc;
+  margin-right: 1.9rem;
+}
+/* Maintenance Services */
+.maintenance-services {
+  background-color: var(--secondary-bg-color);
+  padding: 2.5rem 0;
+}
+.maintenance-services .container {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+}
+.maintenance-services .container .image {
+  flex: 1;
+}
+.maintenance-services .container .image img {
+  height: 100%;
+}
+.maintenance-services .container .maintenance-info {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  flex: 2;
+  gap: 1.3rem;
+  padding: 2.5rem 2.2rem;
+  background-color: white;
+  border-radius: 1rem;
+}
+.maintenance-services .container .maintenance-info h3 {
+  font-size: 36px;
+}
+.maintenance-services .container .maintenance-info ul {
+  color: var(--main-text-color);
+  font-size: 1.3rem;
+}
+.maintenance-services .container .maintenance-info ul li {
+  list-style-type: disc;
+  margin-right: 1.9rem;
+}
+/* shared Area Services */
+.shared-area-services {
+  background-color: var(--secondary-bg-color);
+  padding: 1.9rem 0;
+}
+.shared-area-services .container {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+}
+.shared-area-services .container .shared-area-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background-color: white;
+  flex: 2;
+  border-radius: 1rem;
+  padding: 1.9rem;
+}
+.shared-area-services .container .shared-area-info h3 {
+  font-size: 2.3rem;
+}
+.shared-area-services .container .shared-area-info ul {
+  color: var(--main-text-color);
+  font-size: 1.3rem;
+  padding-bottom: 1.3rem;
+}
+.shared-area-services .container .shared-area-info ul li {
+  list-style-type: disc;
+  margin-right: 1.9rem;
+}
+.shared-area-services .container .image {
+  flex: 1;
+}
+.shared-area-services .container .image img {
+  height: 100%;
+}
+/* Homeowners Association Services */
+.homeowners-association-services {
+  background-color: var(--secondary-bg-color);
+  padding: 1.9rem 0;
+}
+.homeowners-association-services .container {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+}
+.homeowners-association-services .container .image {
+  flex: 1;
+}
+.homeowners-association-services .container .image img {
+  height: 100%;
+}
+.homeowners-association-services .container .homeowners-association-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  flex: 2;
+  gap: 1.3rem;
+  background-color: white;
+  padding: 2.5rem 2.2rem;
+  border-radius: 1rem;
+}
+.homeowners-association-services .container .homeowners-association-info h3 {
+  font-size: 2.3rem;
+}
+.homeowners-association-services .container .homeowners-association-info ul {
+  color: var(--main-text-color);
+  font-size: 1.3rem;
+}
+.homeowners-association-services .container .homeowners-association-info ul li {
+  list-style-type: disc;
+  margin-right: 1.9rem;
+}
+/* Frequently Asked Questions */
+.frequently-questions {
+  padding: 5rem 0;
+  background-color: var(--secondary-bg-color);
+}
+.frequently-questions .container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.frequently-questions .container h3 {
+  font-size: 2.3rem;
+  padding-bottom: 3.8rem;
+  align-self: center;
+}
+.frequently-questions .container .questions {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.frequently-questions .container .questions .questions-right {
+  display: flex;
+  flex-direction: column;
+  gap: 1.3rem;
+  width: 45%;
+}
+.frequently-questions .container .questions .questions-right .question {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.1rem;
+  background-color: white;
+  border-radius: 0.9rem;
+}
+.frequently-questions .container .questions .questions-left {
+  display: flex;
+  flex-direction: column;
+  gap: 1.3rem;
+  width: 45%;
+}
+.frequently-questions .container .questions .questions-left .question {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.1rem;
+  background-color: white;
+  border-radius: 0.9rem;
+}
+/* Extra Small (Phones) */
+@media (max-width: 575px) {
+  /* Our products */
+  .our-products .container .our-products-btns {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  .our-products .container .our-products-btns a {
+    width: 100%;
+  }
+  /* Features of Building Management */
+  .building-management-features .container .stars {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+  }
+  .building-management-features .container .stars .star:first-child,
+  .building-management-features .container .stars .star:last-child,
+  .building-management-features .container hr {
+    display: none;
+  }
+  /* Cleaning Services */
+  .cleaning-services .container .deep-cleaning {
+    grid-template-columns: repeat(1, 1fr);
+    gap: 1rem;
+  }
+  .cleaning-services .container .deep-cleaning .content {
+    order: 2;
+  }
+  .cleaning-services .container .deep-cleaning .content ul {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .cleaning-services .container .deep-cleaning .content button {
+    margin-top: 1rem;
+  }
+  .cleaning-services .container .deep-cleaning .image {
+    order: 1;
+  }
+  /* Surface Cleaning */
+  .surface-cleaning .container {
+    flex-direction: column;
+    gap: 0;
+  }
+  .surface-cleaning .container .surface-cleaning-info {
+    padding: 0;
+  }
+  /* Maintenance Services */
+  .maintenance-services .container {
+    flex-direction: column;
+    gap: 0;
+  }
+  .maintenance-services .container .maintenance-info {
+    padding: 0;
+  }
+  /* shared Area Services */
+  .shared-area-services .container {
+    flex-direction: column;
+    gap: 0;
+  }
+  .shared-area-services .container .shared-area-info {
+    order: 2;
+    padding: 0;
+  }
+  .shared-area-services .container .image {
+    order: 1;
+  }
+  /* Homeowners Association Services */
+  .homeowners-association-services .container {
+    flex-direction: column;
+    gap: 0;
+  }
+  .homeowners-association-services .container .homeowners-association-info {
+    padding: 0;
+  }
+  /* Frequently Asked Questions */
+  .frequently-questions .container .btns {
+    flex-direction: column;
+  }
+  .frequently-questions .container .questions {
+    flex-direction: column;
+  }
+  .frequently-questions .container .questions .questions-right,
+  .frequently-questions .container .questions .questions-left {
+    width: 100%;
+  }
+}
+/* Small (Tablets & Larger Phones) */
+@media (min-width: 576px) and (max-width: 767px) {
+  .our-products .container .our-products-btns {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  .our-products .container .our-products-btns a {
+    width: 75%;
+  }
+  /* Features of Building Management */
+  .building-management-features .container .stars {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .building-management-features .container .stars .star:first-child,
+  .building-management-features .container .stars .star:last-child,
+  .building-management-features .container hr {
+    display: none;
+  }
+  .cleaning-services .container .deep-cleaning {
+    grid-template-columns: repeat(1, 1fr);
+    gap: 1rem;
+  }
+  .cleaning-services .container .deep-cleaning .content {
+    order: 2;
+  }
+  .cleaning-services .container .deep-cleaning .content button {
+    margin-top: 1rem;
+  }
+  .cleaning-services .container .deep-cleaning .image {
+    order: 1;
+  }
+  /* Surface Cleaning */
+  .surface-cleaning .container {
+    flex-direction: column;
+    gap: 0;
+  }
+  .surface-cleaning .container .surface-cleaning-info {
+    padding: 0;
+  }
+  .surface-cleaning .container .surface-cleaning-info ul {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+  /* Maintenance Services */
+  .maintenance-services .container {
+    flex-direction: column;
+    gap: 0;
+  }
+  .maintenance-services .container .maintenance-info {
+    padding: 1rem;
+  }
+  .maintenance-services .container .maintenance-info ul {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+  /* shared Area Services */
+  .shared-area-services .container {
+    flex-direction: column;
+    gap: 0;
+  }
+  .shared-area-services .container .shared-area-info {
+    order: 2;
+    padding: 1rem;
+  }
+  .shared-area-services .container .image {
+    order: 1;
+  }
+  /* Homeowners Association Services */
+  .homeowners-association-services .container {
+    flex-direction: column;
+    gap: 0;
+  }
+  .homeowners-association-services .container .homeowners-association-info {
+    padding: 1rem;
+  }
+}
+/* Medium (Tablets) */
+@media (min-width: 768px) and (max-width: 991px) {
+  /* Our products */
+  .our-products .container .our-products-btns {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .our-products .container .our-products-btns a {
+    font-size: 1.2rem;
+  }
+  /* Features of Building Management */
+  .building-management-features .container .stars {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .building-management-features .container .stars .star:first-child,
+  .building-management-features .container .stars .star:last-child,
+  .building-management-features .container hr {
+    display: none;
+  }
+}

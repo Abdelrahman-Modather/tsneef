@@ -1,0 +1,663 @@
+/* Our Products */
+.our-products {
+  padding: 5rem 0;
+  background-color: var(--secondary-bg-color);
+}
+.our-products .container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 3.1rem;
+  text-align: center;
+}
+.our-products .container span {
+  font-size: 3rem;
+  font-weight: 600;
+}
+.our-products .container .our-products-btns {
+  display: flex;
+  gap: 1.3rem;
+  width: 100%;
+}
+.our-products .container .our-products-btns a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.8rem;
+  width: calc(100% / 3);
+  height: 5.9rem;
+  border-radius: 0.6rem;
+  font-size: 1.6rem;
+  font-weight: bold;
+  background-color: white;
+  color: #292a36;
+}
+.our-products .container .our-products-btns a img {
+  width: 1.8rem;
+  height: 1.8rem;
+}
+.our-products .container .our-products-btns a:nth-child(1) {
+  color: white;
+  background-color: var(--main-color);
+}
+.our-products .container p {
+  font-size: 1.3rem;
+  color: var(--main-text-color);
+  max-width: 90%;
+}
+/* Features of Home Services */
+.features-home-services {
+  background-color: white;
+  padding: 3.8rem 0;
+}
+.features-home-services .container {
+  display: flex;
+  flex-direction: column;
+}
+.features-home-services .container h3 {
+  align-self: center;
+  font-size: 2.3rem;
+  padding-bottom: 4.4rem;
+}
+.features-home-services .container hr {
+  background-color: #e6e6e6;
+  height: 1px;
+  border: none;
+  position: relative;
+  top: 3rem;
+  width: 97%;
+  align-self: center;
+}
+.features-home-services .container .stars {
+  display: flex;
+  justify-content: space-between;
+  gap: 1.9rem;
+}
+.features-home-services .container .stars .star {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1.3rem;
+  text-align: center;
+}
+.features-home-services .container .stars .star:first-child img,
+.features-home-services .container .stars .star:last-child img {
+  position: relative;
+  width: 3.5rem;
+  height: 3.5rem;
+  top: -3.1rem;
+}
+.features-home-services .container .stars .star img {
+  width: 5.2rem;
+  height: 5.9rem;
+  z-index: 10;
+}
+.features-home-services .container .stars .star p {
+  color: var(--main-color);
+  font-size: 1.4rem;
+}
+/* Furniture and Furnishings */
+.furniture-furnishings {
+  padding: 5rem 0;
+  background-color: var(--secondary-bg-color);
+}
+.furniture-furnishings .container {
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 1.9rem;
+  border-bottom: 1px solid #e6e6e6;
+}
+.furniture-furnishings .container h3 {
+  font-size: 2rem;
+  padding-bottom: 1.9rem;
+}
+.furniture-furnishings .container .cards {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1rem;
+}
+.furniture-furnishings .container .cards .card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 5px;
+  background-color: white;
+  border-radius: 0.5rem;
+  padding: 1.3rem 2.5rem;
+  transition: var(--transition);
+}
+.furniture-furnishings .container .cards .card:hover {
+  scale: var(--scale-size);
+}
+.furniture-furnishings .container .cards .card .icon img {
+  width: 2.5rem;
+  height: 2.5rem;
+}
+.furniture-furnishings .container .cards .card p {
+  color: var(--main-text-color);
+  padding-bottom: 2.5rem;
+}
+.furniture-furnishings .container .cards .card h4 {
+  font-size: 1.5rem;
+}
+/* Cleanliness and internal facilities */
+.internal-facilities {
+  background-color: var(--secondary-bg-color);
+}
+.internal-facilities .container {
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 5rem;
+  border-bottom: 1px solid #e6e6e6;
+}
+.internal-facilities .container .content {
+  width: 45%;
+}
+.internal-facilities .container .content h3 {
+  font-size: 2rem;
+}
+.internal-facilities .container .content p {
+  color: var(--main-text-color);
+  font-size: 1.25rem;
+  padding: 16px 0;
+}
+.internal-facilities .container .content button {
+  background-color: var(--main-color);
+  color: white;
+  padding: 0.5rem;
+}
+.internal-facilities .container .content button:hover {
+  background-color: white;
+  color: var(--main-color);
+}
+.internal-facilities .container .services {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  width: 45%;
+  gap: 1.25rem;
+}
+.internal-facilities .container .services .service {
+  display: flex;
+  align-items: center;
+  padding-right: 0.6rem;
+  gap: 0.9rem;
+  background-color: white;
+  border-radius: 1rem;
+  height: 4.75rem;
+}
+.internal-facilities .container .services .service span {
+  font-size: 1.3rem;
+}
+.internal-facilities .container .services .service img {
+  width: 2.5rem;
+  height: 2.5rem;
+}
+/* Cleanliness and external facilities  */
+.external-facilities {
+  background-color: var(--secondary-bg-color);
+  padding: 3.8rem 0;
+}
+.external-facilities .container {
+  border-bottom: 1px solid #e6e6e6;
+  padding-bottom: 30px;
+}
+.external-facilities .container h3 {
+  font-size: 2rem;
+  padding-bottom: 1.3rem;
+}
+.external-facilities .container h3:nth-of-type(2) {
+  padding-bottom: 1.9rem;
+}
+.external-facilities .container .icon img {
+  width: 2.5rem;
+  height: 2.5rem;
+}
+.external-facilities .container .cards {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1rem;
+}
+.external-facilities .container .cards .card {
+  display: flex;
+  flex-direction: column;
+  gap: 1.3rem;
+  padding: 1.3rem 2.5rem 2.3rem 2.5rem;
+  background-color: white;
+  border-radius: 8px;
+  justify-content: space-between;
+  transition: var(--transition);
+}
+.external-facilities .container .cards .card:hover {
+  background-image: linear-gradient(
+      to right,
+      rgba(73, 42, 112, 0.75),
+      rgba(73, 42, 112, 0.75)
+    ),
+    url(../images/clean-glass-2.png);
+  background-size: cover;
+  background-position: center;
+  scale: var(--scale-size);
+}
+.external-facilities .container .cards .card:hover .icon svg path {
+  fill: white;
+}
+.external-facilities .container .cards .card:hover h3,
+.external-facilities .container .cards .card:hover p {
+  color: white;
+}
+.external-facilities .container .cards .card:hover button {
+  color: white;
+  border: 1px solid white;
+  background-color: transparent;
+}
+.external-facilities .container .cards .card h3 {
+  color: black;
+  font-size: 1.5rem;
+}
+.external-facilities .container .cards .card p {
+  color: var(--main-text-color);
+  font-size: 1.1rem;
+  padding-bottom: 2.5rem;
+}
+/* Insects Insects */
+.insects-insects {
+  background-color: var(--secondary-bg-color);
+}
+.insects-insects .container {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid #e6e6e6;
+  padding-bottom: 5rem;
+}
+.insects-insects .container .content {
+  width: 45%;
+}
+.insects-insects .container .content h3 {
+  font-size: 2.3rem;
+}
+.insects-insects .container .content p {
+  color: var(--main-text-color);
+  font-size: 1.3rem;
+  padding: 0.6rem 0;
+}
+.insects-insects .container .content button {
+  background-color: var(--main-color);
+  color: white;
+  padding: 0.5rem;
+  margin-top: 1.3rem;
+}
+.insects-insects .container .content button:hover {
+  color: var(--main-color);
+  background-color: white;
+}
+.insects-insects .container .services {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  width: 45%;
+  column-gap: 1.3rem;
+}
+.insects-insects .container .services .service {
+  display: flex;
+  align-items: center;
+  padding-right: 0.6rem;
+  gap: 0.9rem;
+  background-color: white;
+  border-radius: 1rem;
+  height: 4.8rem;
+}
+.insects-insects .container .services .service:last-child {
+  grid-column: span 2;
+}
+.insects-insects .container .services .service span {
+  font-size: 1.4rem;
+}
+.insects-insects .container .services .service img {
+  width: 2.5rem;
+  height: 2.5rem;
+}
+/* Home Services Packages */
+.home-services-packages {
+  padding: 5rem 0;
+  background-color: var(--main-color);
+}
+.home-services-packages .container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.home-services-packages .container h3 {
+  font-size: 3rem;
+  color: white;
+  padding-bottom: 1.9rem;
+}
+.home-services-packages .container .packages {
+  display: flex;
+  gap: 1.3rem;
+}
+.home-services-packages .container .packages .package {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 24.1rem;
+  height: 21rem;
+  background-color: white;
+  border-radius: 0.5rem;
+  padding: 1.9rem;
+  transition: var(--transition);
+}
+.home-services-packages .container .packages .package:hover {
+  scale: var(--scale-size);
+}
+.home-services-packages .container .packages .package .content h4 {
+  font-size: 2rem;
+  color: black;
+}
+.home-services-packages .container .packages .package .content p {
+  color: var(--main-text-color);
+  padding-top: 1rem;
+}
+.home-services-packages .container .packages .package a {
+  padding: 0.3rem;
+}
+/* Frequently Asked Questions */
+.frequently-questions {
+  padding: 5rem 0;
+  background-color: var(--secondary-bg-color);
+}
+.frequently-questions .container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 3.1rem;
+}
+.frequently-questions .container .btns {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+.frequently-questions .container .btns button:first-child {
+  width: 16.4rem;
+  height: 4.7rem;
+  font-size: 1.3rem;
+  font-weight: bold;
+  text-align: center;
+  color: white;
+  background-color: var(--main-color);
+  border-radius: 0.6rem;
+}
+.frequently-questions .container .btns button:last-child {
+  width: 16.4rem;
+  height: 4.7rem;
+  font-size: 1.3rem;
+  font-weight: bold;
+  text-align: center;
+  color: var(--main-color);
+  background-color: transparent;
+  border: 1px solid var(--main-color);
+  border-radius: 0.6rem;
+}
+.frequently-questions .container .questions {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.frequently-questions .container .questions .questions-right {
+  display: flex;
+  flex-direction: column;
+  gap: 1.3rem;
+  width: 45%;
+}
+.frequently-questions .container .questions .questions-right .question {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.1rem;
+  background-color: white;
+  border-radius: 0.9rem;
+}
+.frequently-questions .container .questions .questions-left {
+  display: flex;
+  flex-direction: column;
+  gap: 1.3rem;
+  width: 45%;
+}
+.frequently-questions .container .questions .questions-left .question {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.1rem;
+  background-color: white;
+  border-radius: 0.9rem;
+}
+/* Media Query */
+/* Extra Small (Phones) */
+@media (max-width: 575px) {
+  /* Our products */
+  .our-products .container .our-products-btns {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  .our-products .container .our-products-btns a {
+    width: 100%;
+  }
+  /* Features of Home Services */
+  .features-home-services .container .stars {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+  }
+  .features-home-services .container .stars .star:first-child,
+  .features-home-services .container .stars .star:last-child,
+  .features-home-services .container hr {
+    display: none;
+  }
+  /* Furniture and Furnishings */
+  .furniture-furnishings .container .cards {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  /* Cleanliness and internal facilities */
+  .internal-facilities .container {
+    flex-direction: column;
+    gap: 1.4rem;
+  }
+  .internal-facilities .container .content {
+    width: 100%;
+  }
+  .internal-facilities .container .services {
+    grid-template-columns: repeat(1, 1fr);
+    width: 100%;
+  }
+  /* Cleanliness and external facilities  */
+  .external-facilities .container .cards {
+    grid-template-columns: repeat(1, 1fr);
+    gap: 1.4rem;
+  }
+  /* Insects Insects */
+  .insects-insects .container {
+    flex-direction: column;
+    gap: 1.4rem;
+  }
+  .insects-insects .container .content {
+    width: 100%;
+  }
+  .insects-insects .container .content h3 {
+    font-size: 1.8rem;
+  }
+  .insects-insects .container .services {
+    grid-template-columns: repeat(1, 1fr);
+    gap: 1.4rem;
+    width: 100%;
+  }
+  .insects-insects .container .services .service:last-child {
+    grid-column: span 1;
+  }
+  /* Home Services Packages */
+  .home-services-packages .container h3 {
+    font-size: 1.8rem;
+  }
+  .home-services-packages .container .packages {
+    flex-direction: column;
+    gap: 1.4rem;
+  }
+  .home-services-packages .container .packages .package {
+    width: 100%;
+  }
+  .home-services-packages .container .packages .package .content h4 {
+    font-size: 1.6rem;
+  }
+  /* Frequently Asked Questions */
+  .frequently-questions .container .btns {
+    flex-direction: column;
+  }
+  .frequently-questions .container .questions {
+    flex-direction: column;
+  }
+  .frequently-questions .container .questions .questions-right,
+  .frequently-questions .container .questions .questions-left {
+    width: 100%;
+  }
+}
+/* Small (Tablets & Larger Phones) */
+@media (min-width: 576px) and (max-width: 767px) {
+  .our-products .container .our-products-btns {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  .our-products .container .our-products-btns a {
+    width: 75%;
+  }
+  /* Features of Home Services */
+  .features-home-services .container .stars {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .features-home-services .container .stars .star:first-child,
+  .features-home-services .container .stars .star:last-child,
+  .features-home-services .container hr {
+    display: none;
+  }
+  /* Furniture and Furnishings */
+  .furniture-furnishings .container .cards {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  /* Cleanliness and internal facilities */
+  .internal-facilities .container {
+    flex-direction: column;
+    gap: 1.4rem;
+  }
+  .internal-facilities .container .content {
+    width: 100%;
+  }
+  .internal-facilities .container .services {
+    grid-template-columns: repeat(1, 1fr);
+    width: 100%;
+  }
+  /* Cleanliness and external facilities  */
+  .external-facilities .container .cards {
+    grid-template-columns: repeat(1, 1fr);
+    gap: 1.4rem;
+  }
+  /* Insects Insects */
+  .insects-insects .container {
+    flex-direction: column;
+    gap: 1.4rem;
+  }
+  .insects-insects .container .content {
+    width: 100%;
+  }
+  .insects-insects .container .content h3 {
+    font-size: 1.8rem;
+  }
+  .insects-insects .container .services {
+    grid-template-columns: repeat(1, 1fr);
+    gap: 1.4rem;
+    width: 100%;
+  }
+  .insects-insects .container .services .service:last-child {
+    grid-column: span 1;
+  }
+  /* Home Services Packages */
+  .home-services-packages .container h3 {
+    font-size: 1.8rem;
+  }
+  .home-services-packages .container .packages {
+    flex-direction: column;
+    gap: 1.4rem;
+  }
+  .home-services-packages .container .packages .package {
+    width: 100%;
+  }
+  .home-services-packages .container .packages .package .content h4 {
+    font-size: 1.6rem;
+  }
+}
+/* Medium (Tablets) */
+@media (min-width: 768px) and (max-width: 991px) {
+  /* Our products */
+  .our-products .container .our-products-btns {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .our-products .container .our-products-btns a {
+    font-size: 1.2rem;
+  }
+  /* Features of Home Services */
+  .features-home-services .container .stars {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .features-home-services .container .stars .star:first-child,
+  .features-home-services .container .stars .star:last-child,
+  .features-home-services .container hr {
+    display: none;
+  }
+  /* Furniture and Furnishings */
+  .furniture-furnishings .container .cards {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  /* Cleanliness and internal facilities */
+  .internal-facilities .container {
+    gap: 1rem;
+  }
+  .internal-facilities .container .content {
+    width: 100%;
+  }
+  .internal-facilities .container .services {
+    grid-template-columns: repeat(1, 1fr);
+    width: 100%;
+  }
+  /* Cleanliness and external facilities  */
+  .external-facilities .container .cards {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.4rem;
+  }
+  /* Insects Insects */
+  .insects-insects .container {
+    flex-direction: column;
+    gap: 1.4rem;
+  }
+  .insects-insects .container .content {
+    width: 100%;
+  }
+  .insects-insects .container .services {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.4rem;
+    width: 100%;
+  }
+  /* Home Services Packages */
+  .home-services-packages .container .packages {
+    gap: 1.4rem;
+  }
+  .home-services-packages .container .packages .package {
+    width: calc(100% / 3);
+  }
+}
