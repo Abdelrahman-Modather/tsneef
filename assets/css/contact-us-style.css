@@ -64,6 +64,7 @@
   grid-column: span 1;
 }
 .contact .container .contact-form .form form input[type="submit"] {
+  font-family: 'DINNextLTArabic';
   background-color: var(--main-color);
   color: white;
   padding: 0.9rem 2.5rem;

@@ -511,6 +511,63 @@ header h1 {
   filter: contrast(0.2);
 }
 
+.whatsapp-contact {
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+  position: fixed;
+  left: -250px; /* Start off-screen */
+  top: 54%;
+  max-width: 21.9rem;
+  padding: 1rem;
+  background-color: white;
+  border-radius: 0.6rem;
+  box-shadow: 6px 4px 64px 10px #0000000d;
+  z-index: 1000;
+  transition: left 0.5s ease-in-out;
+}
+
+.whatsapp-contact.show {
+  left: 0;
+}
+
+.whatsapp-contact span {
+  font-weight: bold;
+  font-size: 1.2rem;
+  color: #333;
+}
+
+.whatsapp-contact p {
+  margin: 0;
+  line-height: 1.5;
+  font-size: 0.95rem;
+}
+
+.number {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.number img {
+  width: 24px;
+  height: 24px;
+}
+
+.number p {
+  font-weight: bold;
+  color: #25D366;
+}
+
+@keyframes whatsapp-popup {
+  0% {
+    left: -250px;
+  }
+  100% {
+    left: 0;
+  }
+}
+
 /* Responsive Screen */
 
 @media (max-width: 576px) {

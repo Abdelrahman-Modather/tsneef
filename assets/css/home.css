@@ -221,6 +221,7 @@
     text-align: center;
     font-size: 3.5rem;
     margin-bottom: 2rem;
+    color: var(--heading-color);
 }
 
 /* Cards container */
@@ -238,7 +239,7 @@
     flex-direction: column;
     padding: 1.5rem;
     border-radius: 8px;
-    background: #fff;
+    background: var(--bg-second-section);
     transition: all 0.5s ease-in-out;
     text-align: right;
     cursor: pointer;
@@ -257,13 +258,17 @@
 .card h3 {
     font-size: 2rem;
     margin-bottom: 1rem;
-    color: var(--primary-color);
+    color: var(--heading-color);
 }
 
 .card p {
     font-size: 1.5rem;
-    color: #555;
+    color: var(--main-text-color);
     margin-top: auto;
+}
+
+.card svg path {
+    fill: var(--main-color);
 }
 
 .card .button-if-hover {
@@ -306,7 +311,7 @@
 
 
 .card:hover .card-text svg path {
-    fill: white !important;
+    fill: var(--heading-color) !important;
     transition: fill 0.5s ease;
 }
 
@@ -590,64 +595,134 @@
   /* End Our-Signature */
   
 /* Start Testimonial */
-
 .testimonial {
-    position: relative;
-    padding: 2rem 0;
-  }
-  .testimonial .cards-wrapper {
-    overflow: hidden;
-    position: relative;
-  }
-  .testimonial .cards {
-    display: grid;
-    gap: 1rem;
-    grid-template-columns: repeat(4, 1fr);
-  }
-  .testimonial .card {
-    min-width: 90%;
-    background-color: var(--bg-primary-section);
-    padding: 1.5rem;
-    border-radius: 10px;
-    box-shadow: 1px 1px 10px 0px rgb(149 149 149 / 27%);
-    scroll-snap-align: center;
-    color: var(--main-text-color);
-  }
-  
-  .testimonial .card .comment {
-    margin-block: 1rem;
-  }
-  .testimonial .author {
-    display: flex;
-    align-items: center;
-    gap: 10px;
-    color: var(--heading-color);
-  }
-  .testimonial .author-img {
-    transform: translateY(18%);
-  
-  }
-  .testimonial .author img {
-    border-radius: 50%;
-  }
-  .indicators {
-    display: flex;
-    justify-content: center;
-    margin-top: 1rem;
-    gap: 10px;
-  }
-  .indicator {
-    width: 3rem;
-    height: 0.5rem;
-    border-radius: 0.5rem;
-    background-color: #ccc;
-    cursor: pointer;
-    border: none;
-    transition: all 0.3s;
-  }
-  .indicator.active {
-    background-color: var(--main-color);
-  }
+  padding: 1rem 0;
+  overflow: hidden; /* Prevent horizontal scrollbar on the whole section */
+}
+
+.testimonial .cards-wrapper {
+  width: 100%;
+  overflow-x: auto; /* Enable horizontal scrolling */
+  scrollbar-width: thin; /* For Firefox */
+  -ms-overflow-style: none; /* For IE and Edge */
+}
+
+/* Hide scrollbar for Chrome, Safari and Opera */
+.testimonial .cards-wrapper::-webkit-scrollbar {
+  display: none;
+}
+
+
+
+.testimonial .testimonial-cards {
+  display: flex;
+  flex-direction: row; /* Changed from column to row for horizontal layout */
+  gap: 1rem;
+  padding: 1rem 0;
+  width: max-content; /* Allow content to determine width */
+}
+
+.testimonial .testimonial-card {
+  width: 280px; /* Fixed width for each card */
+  min-width: 280px; /* Ensure minimum width */
+  flex-shrink: 0; /* Prevent cards from shrinking */
+  margin: 0;
+  padding: 1rem;
+  text-align: center;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+
+
+.testimonial .author {
+  color: var(--main-text-color);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 5px;
+  margin-top: 1rem;
+}
+
+.testimonial .author-img {
+  transform: translateY(0);
+}
+
+.testimonial .author img {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+}
+
+.testimonial .testimonial-card .comment {
+  color: var(--main-text-color);
+  font-size: 1rem;
+  line-height: 1.5;
+  margin: 1rem 0;
+}
+
+/* Improve indicators */
+.indicators {
+  display: flex;
+  justify-content: center;
+  gap: 5px;
+  margin-top: 1rem;
+}
+
+.indicator {
+  width: 2rem;
+  height: 0.4rem;
+  border: none;
+  border-radius: 0.2rem;
+  background-color: #d9d9d9;
+  cursor: pointer;
+}
+
+.indicator.active {
+  background-color: var(--main-color);
+}
+
+.testimonial .cards-wrapper::-webkit-scrollbar {
+  width: 10px;
+  /* Adjust width */
+  height: 10px;
+  /* Adjust height for horizontal scrollbar */
+}
+
+.testimonial .cards-wrapper::-webkit-scrollbar-thumb {
+  background: var(--main-color);
+  /* Change scrollbar thumb color */
+  border-radius: 10px;
+  /* Rounded corners */
+}
+
+.testimonial .cards-wrapper::-webkit-scrollbar-track {
+  background: #ddd;
+  /* Track background color */
+  border-radius: 10px;
+  /* Rounded corners */
+}
+
+body::-webkit-scrollbar {
+  width: 10px;
+  /* Adjust width */
+  height: 10px;
+  /* Adjust height for horizontal scrollbar */
+}
+body::-webkit-scrollbar-thumb {
+  background: var(--main-color);
+  /* Change scrollbar thumb color */
+  border-radius: 10px;
+  /* Rounded corners */
+}
+body::-webkit-scrollbar-track {
+  background: #ddd;
+  /* Track background color */
+  border-radius: 10px;
+  /* Rounded corners */
+}
+
   
   /* End Testimonial */
   
@@ -810,5 +885,62 @@
     }
 
 }
+.whatsapp-contact {
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+  position: fixed;
+  left: -250px; /* Start off-screen */
+  top: 54%;
+  max-width: 21.9rem;
+  padding: 1rem;
+  background-color: white;
+  border-radius: 0.6rem;
+  box-shadow: 6px 4px 64px 10px #0000000d;
+  z-index: 1000;
+  transition: left 0.5s ease-in-out;
+}
+
+.whatsapp-contact.show {
+  left: 0;
+}
+
+.whatsapp-contact span {
+  font-weight: bold;
+  font-size: 1.2rem;
+  color: #333;
+}
+
+.whatsapp-contact p {
+  margin: 0;
+  line-height: 1.5;
+  font-size: 0.95rem;
+}
+
+.number {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.number img {
+  width: 24px;
+  height: 24px;
+}
+
+.number p {
+  font-weight: bold;
+  color: #25D366;
+}
+
+@keyframes whatsapp-popup {
+  0% {
+    left: -250px;
+  }
+  100% {
+    left: 0;
+  }
+}
   @media (max-width: 480px) {
+    
   }

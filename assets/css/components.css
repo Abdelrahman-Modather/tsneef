@@ -19,6 +19,24 @@ body {
   font-family: DINNextLTArabic;
   line-height: 1.8;
 }
+*::-webkit-scrollbar {
+  width: 10px;
+  /* Adjust width */
+  height: 10px;
+  /* Adjust height for horizontal scrollbar */
+}
+*::-webkit-scrollbar-thumb {
+  background: var(--main-color);
+  /* Change scrollbar thumb color */
+  border-radius: 10px;
+  /* Rounded corners */
+}
+*::-webkit-scrollbar-track {
+  background: #ddd;
+  /* Track background color */
+  border-radius: 10px;
+  /* Rounded corners */
+}
 .container {
   width: 85%;
   margin: 0 auto;
@@ -530,5 +548,79 @@ a {
   .nav .container .themes .theme-btn:last-child {
     background-color: white;
     border: 1px solid #848383;
+  }
+}
+/* Large (Small Desktops) */
+@media (min-width: 992px) and (max-width: 1199px) {
+  .container {
+    width: 90%;
+  }
+  
+  /* Nav */
+  .nav .container .nav-logo a svg {
+    width: 11rem;
+    height: 2.5rem;
+  }
+  
+  .nav .container .links-theme .nav-links {
+    gap: 1.5rem;
+  }
+  
+  .nav .container .nav-btn a {
+    width: 7rem;
+    height: 2.8rem;
+    font-size: 1.2rem;
+  }
+  
+  /* Footer */
+  .footer .container .social-media {
+    gap: 3rem;
+  }
+  
+  .footer .container .company-info .company-definition {
+    width: 40%;
+  }
+  
+  .footer .container .company-info .contact-info {
+    width: 55%;
+  }
+  
+  .footer .container .payment-copyright .payment-method img {
+    width: 3.8rem;
+    height: 2.8rem;
+  }
+}
+
+/* Extra Large (Medium Desktops - around 1246px) */
+@media (min-width: 1200px) and (max-width: 1300px) {
+  .container {
+    width: 88%;
+  }
+  
+  /* Nav */
+  .nav .container .links-theme .nav-links {
+    gap: 2rem;
+  }
+  
+  .nav .container .nav-btn a {
+    width: 7.5rem;
+  }
+  
+  /* Footer */
+  .footer .container .social-media {
+    gap: 3.8rem;
+  }
+  
+  .footer .container .company-info .company-definition {
+    width: 42%;
+  }
+  
+  .footer .container .company-info .contact-info {
+    width: 52%;
+  }
+  
+  .footer .container .payment-copyright .payment-method img {
+    width: 4.2rem;
+    height: 3rem;
   }
 }

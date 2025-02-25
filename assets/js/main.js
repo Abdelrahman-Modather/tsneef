@@ -15,6 +15,9 @@ function DropDownList() {
     }
   });
 }
+
+
+
 DropDownList();
 //Burger Menu
 function BurgerMenu() {
@@ -35,3 +38,26 @@ function BurgerMenu() {
   });
 }
 BurgerMenu();
+
+
+const popup = document.getElementById('whatsappContact');
+    
+function togglePopup() {
+  popup.classList.toggle('show');
+}
+
+// Initial display
+setTimeout(() => {
+  popup.classList.add('show');
+}, 500);
+
+// Set up the toggle interval
+setInterval(() => {
+  togglePopup();
+  
+  // Show it again after 5 seconds
+  setTimeout(() => {
+    togglePopup();
+  }, 5000);
+  
+}, 10000); 

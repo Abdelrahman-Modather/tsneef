@@ -242,3 +242,26 @@ main p {
     gap: 2rem;
   }
 }
+
+@media (min-width: 992px) and (max-width: 1199px) {
+  :root {
+    font-size: 14px;
+  }
+  
+  main .content {
+    column-gap: 2rem;
+  }
+  
+  .form-container {
+    padding: 1.25rem;
+  }
+  
+  .info-container {
+    padding: 2.5rem;
+  }
+  
+  .info-container svg {
+    width: 180px;
+    bottom: 15%;
+  }
+}
